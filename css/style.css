@@ -1,0 +1,116 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+canvas {
+    display: block;
+}
+
+div#separation{
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 2px);
+    width: 5px;
+    height: calc(100% - 6px);
+    background-color: #373737;
+    border: 3px solid #494949;
+    z-index: 1;
+}
+
+div#stats{
+    position: absolute;
+    bottom: 0px;
+    left: calc(50% - 80px);
+    width: 160px;
+    height: fit-content;
+    background-color: #797474;
+    border: 3px solid #494949;
+    z-index: 2;
+    border-radius: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+div#stats p#gameTime{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+div#stats div.statsDiv{
+    display: flex;
+    align-items: center;
+}
+
+div#stats div.statsDiv img{
+    width: 40px;
+    height: 40px;
+    margin: 0px;
+    padding: 0px;
+}
+
+div#stats div.statsDiv p{
+    width: 50%;
+    margin: 0px;
+    font-size: 20px;
+}
+
+.notEnough{
+    animation: blink 1s 2;
+}
+
+/* key animation of the color blinking red and go back to normal color */
+@keyframes blink {
+
+    0% {
+        background-color: #ff0000;
+    }
+    100% {
+        background-color: none;
+    }
+}
+
+div.HUDPlayers{
+    position: absolute;
+    z-index: 3;
+    top: calc(50% - 100px);
+    width: 500px;
+    display: none;
+    max-height: 300px;
+    overflow-y: scroll;
+    background-color: white;
+    border-radius: 2px;
+}
+
+div#player1HUD{
+    left: calc(25% - 250px);
+}
+
+div#player2HUD{
+    left: calc(75% - 250px);
+}
+
+
+div.HUDPlayers div:first-child{
+    background-color: green;
+}
+
+div.HUDPlayers div.batiment img{
+    width: 30%;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+div.HUDPlayers div.batiment div{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+div.HUDPlayers div.batiment div{
+    display: inline-block;
+    width: 50%;
+}
+

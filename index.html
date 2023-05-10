@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green City</title>
+    <link rel="shortcut icon" type="image/png" href="/img/tree.png" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div id="separation"></div>
+    <div id="stats">
+        <p id="gameTime">10s</p>
+        <div class="statsDiv">
+            <p id="moneyPlayer1">0</p>
+            <img src="./img/coinGC.png" alt="">
+            <p id="moneyPlayer2">0</p>
+        </div>
+        <div class="statsDiv">
+            <p id="greenP1">0</p>
+            <img src="./img/tree.png" alt="">
+            <p id="greenP2">0</p>
+        </div>
+        <div class="statsDiv">
+            <p id="people1">0</p>
+            <img src="./img/family.png" alt="">
+            <p id="people2">0</p>
+        </div>
+
+    </div>
+
+    <div class="HUDPlayers" id="player1HUD">
+        <div name="house_poly_by_google" class="batiment">
+            <img src="./img/tree.png" class="image_batiment" alt="">
+            <div>
+                <p class="titre_batiment">Maison</p>
+                <p class="description_batiment">Une simple maison.</p>
+            </div>
+        </div>
+        <div name="lack_of_taste" class="batiment">
+            <img src="./img/tree.png" class="image_batiment" alt="">
+            <div>
+                <p class="titre_batiment">Hutte</p>
+                <p class="description_batiment">Une hutte de sorcière.</p>
+            </div>
+        </div>
+    </div>
+    <div class="HUDPlayers" id="player2HUD">
+        <div name="house_poly_by_google" class="batiment">
+            <img src="./img/tree.png" class="image_batiment" alt="">
+            <div>
+                <p class="titre_batiment">Maison</p>
+                <p class="description_batiment">Une simple maison.</p>
+            </div>
+        </div>
+        <div name="lack_of_taste" class="batiment">
+            <img src="./img/tree.png" class="image_batiment" alt="">
+            <div>
+                <p class="titre_batiment">Hutte</p>
+                <p class="description_batiment">Une hutte de sorcière.</p>
+            </div>
+        </div>
+    </div>
+    <canvas id="myCanvas"></canvas>
+
+    <!-- Libraries (online) -->
+    <!-- <script src="https://cdn.babylonjs.com/babylon.max.js"></script>
+    <script src="https://cdn.babylonjs.com/loaders/babylonjs.loaders.js"></script>
+    <script src="https://cdn.babylonjs.com/gui/babylon.gui.js"></script> -->
+    <!-- <script src="https://cdn.babylonjs.com/loaders/babylon.objFileLoader.js"></script> -->
+
+    <!-- Libraries (offline) -->
+    <script src="lib/babylon.max.js"></script>
+    <script src="lib/babylonjs.loaders.js"></script>
+    <script src="lib/babylon.gui.js"></script>
+    <!-- <script src="lib/babylon.objFileLoader.js"></script> -->
+
+    <script src="./js/gameConf.js"></script>
+    <script src="./js/game.js"></script>
+    <script src="./js/view.js"></script>
+</body>
+
+</html>

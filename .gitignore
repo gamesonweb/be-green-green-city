@@ -1,0 +1,5 @@
+# VS Code user settings
+.vscode/
+
+# WSL config files
+*.Identifier
